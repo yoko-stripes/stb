@@ -58,6 +58,9 @@ a.red-button {
 a.red-button:hover {
   background: #9E2026;
 }
+.hide {
+  display: none !important;
+}
 .dps {
   display: none;
 }
@@ -443,11 +446,21 @@ a.red-button:hover {
   gap: 0 48px;
 }
 .quality h2 {
+  position: relative;
   color: #fff;
   text-align: left;
   padding: 0 0 0 124px;
+}
+.quality h2:before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 100px;
   background: url("../img/dod_seal.png") no-repeat;
   background-size: 100px 100px;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .quality p {
   color: #fff;
@@ -974,7 +987,7 @@ a.red-button:hover {
 .main h1 {
   color: #000;
   font-size: 40px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 52px;
   margin: 0 auto 24px;
 }
@@ -1011,10 +1024,19 @@ footer div.cont {
   align-items: center;
 }
 .footer_dodstb {
+  position: relative;
   width: 285px;
+}
+.footer_dodstb:before {
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 64px;
   background: url("../img/dod_seal.png") no-repeat;
   background-size: 64px 64px;
-  background-position: left 0 top 5px;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .footer_dodstb p {
   color: #fff;
@@ -1077,9 +1099,9 @@ footer .copy {
 }
 /*** Small devices such as mobile phones ***/
 @media only screen and (max-width: 374px) {
-  .stblogo img,.dodlogo img {
-        width: 80%;
-    }
+  .stblogo img, .dodlogo img {
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 895px) {
   .dps {
@@ -1161,12 +1183,21 @@ footer .copy {
     background-color: #eee;
   }
   .slide-menu .dodstb {
+    position: relative;
     width: auto;
     height: 3.5rem;
+    margin: 0 0 24px 0;
+  }
+  .slide-menu .dodstb:before {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 48px;
     background: url("../img/dod_seal.png") no-repeat;
     background-size: 48px 48px;
-    background-position: left 0 top 5px;
-    margin: 0 0 24px 0;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .slide-menu .dodstb p {
     color: #000;
@@ -1199,7 +1230,7 @@ footer .copy {
     padding: 0;
   }
   h1 {
-    font-size: 32px;
+    font-size: 28px !important;
     line-height: 41.6px;
   }
   h2 {
@@ -1298,6 +1329,7 @@ footer .copy {
   .main_points .child:nth-child(1) {
     width: auto;
     padding: 0 16px 18px;
+    justify-content: center;
   }
   .main_points .child:nth-child(2) {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -1351,7 +1383,7 @@ footer .copy {
     margin: 0 auto;
   }
   .takeaction h3 {
-    font-weight: 800;
+    font-weight: 700;
   }
   .takeaction div {
     width: auto;
@@ -1495,7 +1527,13 @@ footer .copy {
   .quality h2 {
     padding: 0 0 0 68px;
     background-size: 56px 56px;
-    height: 4rem;
+    height: auto;
+  }
+  .quality h2:before {
+    width: 56px;
+    height: 56px;
+    background-size: 56px 56px;
+    left: 0px;
   }
   .quality p {
     color: #fff;
@@ -1826,17 +1864,15 @@ footer .copy {
   }
   footer div.cont {
     width: auto;
-    padding: 48px 16px 0;
+    padding: 24px 16px 0;
     gap: 0;
     flex-direction: column;
     align-items: flex-start;
   }
   .footer_dodstb {
+    position: relative;
     width: auto;
-    height: 6rem;
-    background: url("../img/dod_seal.png") no-repeat;
-    background-size: 64px 64px;
-    background-position: left 0 top 5px;
+    height: auto;
   }
   .footer_dodstb p {
     color: #fff;
@@ -1844,7 +1880,7 @@ footer .copy {
     font-weight: 700;
     line-height: 21px;
     text-align: left;
-    padding: 0 0 0 80px;
+    padding: 24px 0 24px 80px;
     margin: 0;
   }
   .footer_dodstb p span.title {
@@ -1898,7 +1934,7 @@ footer .copy {
   }
   /* other pages */
   .main {
-    padding: 64px 16px;
+    padding: 40px 16px;
   }
   /* external link modal */
   .modal-content {
@@ -1912,11 +1948,10 @@ footer .copy {
   .modal p:first-of-type {
     margin: 0 auto 32px;
   }
-  
   .policy_centered {
-  text-align: center !important;
-  max-width: unset !important;
-}
+    text-align: center !important;
+    max-width: unset !important;
+  }
 }
 /*** Medium devices such as Tablets and small desktops ***/
 @media only screen and (min-width: 896px) and (max-width: 1512px) {
@@ -1948,7 +1983,7 @@ footer .copy {
     flex-wrap: wrap;
   }
   .main_cont h1 {
-    padding: 64px 0 32px 0;
+    padding: 126px 0 32px 0;
     margin: 0 auto;
   }
   .main_cont p {
@@ -1960,29 +1995,20 @@ footer .copy {
   }
   .main_points {
     padding: 24px 20px;
-    height: 6rem;
+    height: auto;
+    align-items: flex-start;
+  }
+  .main_points p {
+    margin: 0;
   }
   .main_points .child {
     width: auto !important;
     height: unset !important;
-    padding: 0 10px;
-  }
-  .main_points .child img {
-    width: 30px;
-    height: 30px;
   }
   .main_points .child:nth-child(1) {
-    width: 400px !important;
+    min-width: 333px;
+    width: auto !important;
     padding: 0 16px 0 0;
-  }
-  .main_points .child:nth-child(1) p {
-    font-size: 13px;
-    padding: 0 0 0 8px;
-    line-height: 20px;
-  }
-  .main_points .child .title {
-    font-size: 20px;
-    line-height: 25px;
   }
   /* home -take action- */
   .takeaction {
@@ -2152,5 +2178,4 @@ footer .copy {
     width: 1512px;
     height: auto;
   }
-  /* header */
 }
