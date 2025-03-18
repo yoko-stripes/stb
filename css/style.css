@@ -974,6 +974,70 @@ a.red-button:hover {
 .stb_courses_cont .linkbutton {
   margin: 0;
 }
+/* Stop the bleed Day - */
+.headerblock.stbday {
+  background: url(../img/stbday/stbday_h1_bk.jpg);
+  background-size: cover;
+  margin: 0 auto 96px;
+}
+.stbday h1 {
+  display: inline-block;
+  color: #B3252B;
+  background: #fff;
+  margin: 206px auto;
+  padding: 8px 24px;
+  text-align: center;
+  font-family: Lato;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 72px */
+}
+.stbd_initial {
+	width: 770px;
+	height: auto;
+	margin: 0 auto 96px;
+}
+
+.stbd_initial p {
+	margin-bottom: 1.5rem;
+}
+
+.stbd_projects, .stbd_training  {
+	width: 770px;
+	height: auto;
+	margin: 0 auto 96px;
+}
+
+.stbd_projects h2, .stbd_training h2  {
+	background: #15263B;
+	padding: 8px 20px;
+	color: #fff;
+	text-align: left;
+}
+
+.stbd_projects > p {
+	width: 770px;
+	text-align: center;
+	margin: 0 auto 48px;
+}
+
+.stbd_projects .project {
+	display: flex;
+	width: 856px;
+	margin: 0 auto 8px;
+	justify-content:space-between;
+}
+
+.stbd_projects .project div img {
+	width: 298px;
+	height: auto;
+}
+
+.stbd_projects .project .texts {
+	width: 510px;
+}
+
 /* Others */
 .main {
   background: #F5F5F5;
