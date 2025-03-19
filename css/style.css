@@ -64,6 +64,9 @@ a.red-button:hover {
 .dps {
   display: none;
 }
+.stbred {
+  color: #B3252B;
+}
 /* menu for mobile */
 .menu-icon, .slide-menu {
   display: none;
@@ -983,7 +986,7 @@ a.red-button:hover {
 .stbday h1 {
   display: inline-block;
   color: #B3252B;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.90);
   margin: 206px auto;
   padding: 8px 24px;
   text-align: center;
@@ -994,50 +997,80 @@ a.red-button:hover {
   line-height: 150%; /* 72px */
 }
 .stbd_initial {
-	width: 770px;
-	height: auto;
-	margin: 0 auto 96px;
+  width: 770px;
+  height: auto;
+  margin: 0 auto 96px;
 }
-
 .stbd_initial p {
-	margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
-
-.stbd_projects, .stbd_training  {
-	width: 770px;
-	height: auto;
-	margin: 0 auto 96px;
+.stbd_projects, .stbd_training {
+  width: 770px;
+  height: auto;
+  margin: 0 auto 96px;
 }
-
-.stbd_projects h2, .stbd_training h2  {
-	background: #15263B;
-	padding: 8px 20px;
-	color: #fff;
-	text-align: left;
+.stbd_projects a, .stbd_training a {
+  color: #B3252B;
 }
-
+.stbd_projects a:hover, .stbd_training a:hover {
+  text-decoration: none;
+}
+.stbd_projects h2, .stbd_training h2 {
+  background: #15263B;
+  padding: 8px 20px;
+  color: #fff;
+  text-align: left;
+}
 .stbd_projects > p {
-	width: 770px;
-	text-align: center;
-	margin: 0 auto 48px;
+  width: 770px;
+  text-align: center;
+  margin: 0 auto 48px;
 }
-
-.stbd_projects .project {
-	display: flex;
-	width: 856px;
-	margin: 0 auto 8px;
-	justify-content:space-between;
+.stbd_projects .project, .stbd_training .project {
+  display: flex;
+  width: 856px;
+  margin: 0 auto 8px;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.stbd_projects .project div img {
-	width: 298px;
-	height: auto;
+.stbd_projects .project div img, .stbd_training .project div img {
+  width: 298px;
+  height: auto;
 }
-
-.stbd_projects .project .texts {
-	width: 510px;
+.stbd_projects .project .texts, .stbd_training .project .texts {
+  width: 510px;
 }
-
+.stbd_projects .moreinfo {
+  width: 770px;
+  height: auto;
+  margin: 48px auto 96px;
+  color: #B3252B;
+  text-align: center;
+  font-weight: 700;
+}
+.stbd_training p.initial {
+  width: 770px;
+  height: auto;
+  text-align: center;
+  margin: 0 auto 48px;
+}
+.stbd_last {
+  width: 856px;
+  height: auto;
+  margin: 96px auto;
+  padding: 20px 43px;
+  border: 1px solid #DCDEDF;
+  background: #F5F5F5;
+}
+.stbd_last p {
+  color: #333;
+  text-align: center;
+  font-family: "Crimson Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
 /* Others */
 .main {
   background: #F5F5F5;
@@ -1922,6 +1955,68 @@ footer .copy {
   }
   .stb_courses_cont .linkbutton {
     margin: 0;
+  }
+  /* Stop the bleed Day - */
+  .headerblock.stbday {
+    margin: 0 auto 40px;
+  }
+  .stbday h1 {
+    margin: 206px auto;
+    padding: 8px 24px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 150%; /* 72px */
+  }
+  .stbd_initial {
+    width: auto;
+    height: auto;
+    margin: 0 auto 40px;
+    padding: 0 16px;
+  }
+  .stbd_projects, .stbd_training {
+    width: auto;
+    height: auto;
+    margin: 0 auto 40px;
+    padding: 0 16px;
+  }
+  .stbd_projects a, .stbd_training a {
+    color: #B3252B;
+  }
+  .stbd_projects h2, .stbd_training h2 {
+    padding: 8px 20px;
+  }
+  .stbd_projects > p {
+    width: auto;
+    margin: 0 auto 16px;
+  }
+  .stbd_projects .project, .stbd_training .project {
+    width: auto;
+    margin: 0 auto 8px;
+    flex-direction: column;
+  }
+  .stbd_projects .project.reverse, .stbd_training .project.reverse {
+    flex-direction: column-reverse;
+  }
+  .stbd_projects .project div img, .stbd_training .project div img {
+    width: 298px;
+    height: auto;
+  }
+  .stbd_projects .project .texts, .stbd_training .project .texts {
+    width: auto;
+  }
+  .stbd_projects .moreinfo {
+    width: auto;
+    margin: 0 auto 96px;
+  }
+  .stbd_training p.initial {
+    width: auto;
+    margin: 0 auto 16px;
+  }
+  .stbd_last {
+    width: auto;
+    margin: 40px auto;
+    padding: 20px 43px;
   }
   /* footer */
   footer {
