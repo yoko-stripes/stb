@@ -1004,18 +1004,19 @@ a.red-button:hover {
 .stbd_initial p {
   margin-bottom: 1.5rem;
 }
-.stbd_projects, .stbd_training {
-  width: 770px;
+.stbd_projects, .stbd_training, .stbd_acs {
+  width: 856px;
   height: auto;
   margin: 0 auto 96px;
 }
-.stbd_projects a, .stbd_training a {
+.stbd_projects a, .stbd_training a, .stbd_acs a {
   color: #B3252B;
 }
-.stbd_projects a:hover, .stbd_training a:hover {
+.stbd_projects a:hover, .stbd_training a:hover, .stbd_acs a:hover {
   text-decoration: none;
 }
-.stbd_projects h2, .stbd_training h2 {
+.stbd_projects h2, .stbd_training h2, .stbd_acs h2 {
+  width: 816px;
   background: #15263B;
   padding: 8px 20px;
   color: #fff;
@@ -1040,6 +1041,14 @@ a.red-button:hover {
 .stbd_projects .project .texts, .stbd_training .project .texts {
   width: 510px;
 }
+.stbd_acs p {
+	width: 770px;
+	margin: 0 auto 32px;
+}
+
+.stbd_acs p:last-of-type {
+	margin: 0 auto;
+}
 .stbd_projects .moreinfo {
   width: 770px;
   height: auto;
@@ -1048,6 +1057,9 @@ a.red-button:hover {
   text-align: center;
   font-weight: 700;
 }
+.stbd_projects .moreinfo p {
+	font-size: 20px;
+}
 .stbd_training p.initial {
   width: 770px;
   height: auto;
@@ -1055,10 +1067,10 @@ a.red-button:hover {
   margin: 0 auto 48px;
 }
 .stbd_last {
-  width: 856px;
+  width: 816px;
   height: auto;
   margin: 96px auto;
-  padding: 20px 43px;
+  padding: 20px 20px;
   border: 1px solid #DCDEDF;
   background: #F5F5F5;
 }
@@ -1958,65 +1970,84 @@ footer .copy {
   }
   /* Stop the bleed Day - */
   .headerblock.stbday {
-    margin: 0 auto 40px;
+    background: url(../img/stbday/stbday_h1_m_bk.jpg);
+    background-size: cover;
+    margin: 0 auto 64px;
+    min-height: 248px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .stbday h1 {
-    margin: 206px auto;
-    padding: 8px 24px;
+    margin: 0 16px;
+    padding: 12px 24px;
     text-align: center;
-    font-size: 48px;
+    font-size: 32px !important;
     font-weight: 800;
-    line-height: 150%; /* 72px */
+    line-height: 130%;
   }
   .stbd_initial {
     width: auto;
     height: auto;
-    margin: 0 auto 40px;
+    margin: 0 auto 64px;
     padding: 0 16px;
   }
-  .stbd_projects, .stbd_training {
+  .stbd_projects, .stbd_training, .stbd_acs {
     width: auto;
     height: auto;
     margin: 0 auto 40px;
     padding: 0 16px;
   }
-  .stbd_projects a, .stbd_training a {
+  .stbd_training {
+    margin: 0px auto 16px;
+  }
+  .stbd_projects a, .stbd_training a, .stbd_acs a {
     color: #B3252B;
   }
-  .stbd_projects h2, .stbd_training h2 {
+  .stbd_projects h2, .stbd_training h2, .stbd_acs h2 {
     padding: 8px 20px;
+    width: auto;
   }
   .stbd_projects > p {
     width: auto;
-    margin: 0 auto 16px;
+    margin: 0 auto 48px;
   }
   .stbd_projects .project, .stbd_training .project {
     width: auto;
-    margin: 0 auto 8px;
+    margin: 0 auto;
     flex-direction: column;
   }
   .stbd_projects .project.reverse, .stbd_training .project.reverse {
     flex-direction: column-reverse;
   }
   .stbd_projects .project div img, .stbd_training .project div img {
-    width: 298px;
+    width: 198px;
     height: auto;
+    margin: 0 auto 16px;
   }
   .stbd_projects .project .texts, .stbd_training .project .texts {
     width: auto;
   }
+  .stbd_projects .project .texts h3, .stbd_training .project .texts h3 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 160%; /* 32px */
+  }
+  .stbd_projects .project .texts p, .stbd_training .project .texts p {
+    margin: 0 auto 48px;
+  }
   .stbd_projects .moreinfo {
     width: auto;
-    margin: 0 auto 96px;
+    margin: 0 auto 63px;
   }
-  .stbd_training p.initial {
+  .stbd_training p.initial, .stbd_acs p {
     width: auto;
     margin: 0 auto 16px;
   }
   .stbd_last {
     width: auto;
-    margin: 40px auto;
-    padding: 20px 43px;
+    margin: 0px 16px 96px;
+    padding: 20px;
   }
   /* footer */
   footer {

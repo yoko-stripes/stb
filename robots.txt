@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /private/
+Disallow: /tmp/
+Allow: /public/
+Sitemap: https://www.dodstopthebleed.org/sitemap.xml

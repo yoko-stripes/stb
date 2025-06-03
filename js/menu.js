@@ -25,8 +25,4 @@ $(document).ready(function () {
       });
     }
   });
-
-  $(window).on('resize', function () {
-    $('.slide_modal').hide();
-  });
 });

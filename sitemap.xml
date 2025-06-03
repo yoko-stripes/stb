@@ -8,33 +8,38 @@
 
 <url>
   <loc>https://www.dodstopthebleed.org/</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-25</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.dodstopthebleed.org/index.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-25</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.dodstopthebleed.org/dod-stop-the-bleed-standards.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-25</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dodstopthebleed.org/dod-stop-the-bleed-resources.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-25</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.dodstopthebleed.org/dod-stop-the-bleed-external-links-disclaimer.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-25</lastmod>
   <priority>0.50</priority>
 </url>
 <url>
   <loc>https://www.dodstopthebleed.org/dod-stop-the-bleed-privacy-security.html</loc>
-  <lastmod>2025-02-13</lastmod>
+  <lastmod>2025-03-25</lastmod>
   <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://www.dodstopthebleed.org/dod-stop-the-bleed-day.html</loc>
+  <lastmod>2025-05-06</lastmod>
+  <priority>0.90</priority>
 </url>
 
 
