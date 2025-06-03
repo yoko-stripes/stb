@@ -1009,10 +1009,10 @@ a.red-button:hover {
   height: auto;
   margin: 0 auto 96px;
 }
-.stbd_projects a, .stbd_training a, .stbd_acs a {
+.stbd_projects a, .stbd_training a, .stbd_acs a,.stbd_initial a {
   color: #B3252B;
 }
-.stbd_projects a:hover, .stbd_training a:hover, .stbd_acs a:hover {
+.stbd_projects a:hover, .stbd_training a:hover, .stbd_acs a:hover, .stbd_initial a:hover {
   text-decoration: none;
 }
 .stbd_projects h2, .stbd_training h2, .stbd_acs h2 {
@@ -2026,7 +2026,7 @@ footer .copy {
     margin: 0 auto 16px;
   }
   .stbd_projects .project .texts, .stbd_training .project .texts {
-    width: auto;
+    width: 100%;
   }
   .stbd_projects .project .texts h3, .stbd_training .project .texts h3 {
     font-size: 20px;
